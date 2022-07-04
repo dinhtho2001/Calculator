@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Controller.ImageToTextActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            style="@style/buttonMenu"
+            android:id="@+id/camera"
+            android:textColor="@color/white"
+            android:contentDescription="chua biet"
+            android:src="@drawable/ic_baseline_photo_camera_24_gray"
+            />
+
+        <TextView
+            style="@style/buttonMenu"
+            android:contentDescription="hien tai"
+            android:gravity="center"
+            android:text="="
+            android:textColor="#EF6C00" />
+
+        <ImageButton
+            style="@style/buttonMenu"
+            android:id="@+id/Option"
+            android:src="@drawable/ic_baseline_apps_24"
+            android:contentDescription="nhieu hon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageToText"
+            android:layout_width="395dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ruler_icon" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/workingsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/almostBlack"
+            android:textAlignment="textEnd"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@id/resultsTV"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resultsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/almostBlack"
+            android:textAlignment="textEnd"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        style="@style/buttonRow"
+
+        android:background="@drawable/duongvien_tren">
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/buttonNumber"
+            android:text="AC"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/buttonNumber"
+            android:layout_height="match_parent"
+
+            android:id="@+id/backSpace"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:text="⌫"/>
+
+        <ImageButton
+            android:id="@+id/speak"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:layout_width ="0dp"
+            android:layout_weight="1"
+            android:contentDescription="void mic"
+            android:background="@color/white"
+            android:src="@drawable/ic_mic"
+
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/division"
+            style="@style/buttonOperator"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/seven"
+            android:text="7"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/eight"
+            android:text="8"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/nine"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/multiplication"
+            style="@style/buttonOperator"
+            android:text="*" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:id="@+id/four"
+            style="@style/buttonNumber"
+
+            android:text="4" />
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/five"
+            android:text="5"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/six"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/subtraction"
+            style="@style/buttonOperator"
+            android:text="-"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/one"
+            android:text="1"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/two"
+            android:text="2"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/three"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/addition"
+            style="@style/buttonOperator"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:contentDescription="null"
+            android:text="" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/buttonNumber"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonNumber"
+            android:text="," />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/equal"
+            android:text="="
+            android:textColor="#EF6C00" />
+
+    </LinearLayout>
+</LinearLayout>

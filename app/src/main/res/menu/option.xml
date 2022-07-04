@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            app:showAsAction="ifRoom"
+            android:id="@+id/icImage"
+            android:title=""
+            android:icon="@drawable/ic_photo_camera">
+
+        </item>
+
+        <item
+            app:showAsAction="ifRoom|collapseActionView"
+            android:id="@+id/icOption"
+            android:title=""
+            android:icon="@drawable/ic_apps">
+
+        </item>
+
+        <item
+            app:showAsAction="always"
+            android:title=""
+            android:icon="@drawable/ic_baseline_menu_24">
+            <menu>
+                <item
+                    app:showAsAction="never"
+                    android:visible="true"
+                    android:title="Lịch sử"
+                    android:icon="@drawable/ic_history"
+                    android:id="@+id/menu_lichSu"/>
+                <item
+                    app:showAsAction="never"
+                    android:title="Cài đặt"
+                    android:icon="@drawable/ic_settings"
+                    android:id="@+id/menu_cai_dat"/>
+                <item
+                    app:showAsAction="never"
+                    android:icon="@drawable/ic_checklist"
+                    android:title="Giới thiệu"
+                    android:id="@+id/menu_gioi_thieu"/>
+            </menu>
+        </item>
+</menu>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="HardcodedText"
+    tools:context=".Controller.Option.OptionActivity">
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item3">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:contentDescription="void mic"
+                android:src="@drawable/ic_data"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                style="@style/optionItem"
+                android:id="@+id/data"
+                android:text="Dữ liệu"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item2">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_average"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+
+                style="@style/optionItem"
+                android:id="@+id/optionDientich"
+                android:text="Diện tích"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item1">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_hourglass"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                style="@style/optionItem"
+                android:text="Thời gian" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item4">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_voucher"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                style="@style/optionItem"
+                android:id="@+id/seven"
+                android:text="Giảm giá"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item5">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:id="@+id/optioImgdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_date"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                style="@style/optionItem"
+                android:id="@+id/optionDate"
+                android:text="Ngày"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/option_activity"
+            android:id="@+id/item6">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_temperature"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                style="@style/optionItem"
+                android:id="@+id/nine"
+                android:text="Nhiệt độ" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        style="@style/buttonRow">
+
+        <LinearLayout
+            android:background="@color/white"
+            style="@style/option_activity">
+
+            <TextView
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ruler_icon"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                android:id="@+id/four"
+                style="@style/optionItem"
+                android:text="Độ dài" />
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/option_activity">
+
+            <ImageButton
+                style="@style/optionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="void mic"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_st"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                android:background="@color/white"
+                style="@style/optionItem"
+                android:id="@+id/GiaXang"
+                android:text="Giá xăng"/>
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/option_activity">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

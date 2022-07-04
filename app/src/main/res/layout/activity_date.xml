@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".Controller.Option.DateActivity">
+
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Từ">
+            </TextView>
+            <TextView
+                android:id="@+id/edtNgayBD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:textColor="@color/orange"
+                android:text="ngay/thang/nam">
+            </TextView>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down_24">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:text="Đến">
+            </TextView>
+            <TextView
+                android:id="@+id/edtNgayKT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="ngay/thang/nam">
+            </TextView>
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_width="20dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down_24">
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/duongvien_goctron"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_height="match_parent"
+                android:text="Khác"
+                android:textSize="40dp"
+                android:textColor="@color/orange"
+                android:gravity="center">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:background="@drawable/duongvien_gocvuong">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Năm"
+                    android:layout_gravity="center"
+                    android:textSize="20dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/nam"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tháng"
+                    android:layout_gravity="center"
+                    android:textSize="20dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/thang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="20dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày"
+                    android:layout_gravity="center"
+                    android:textSize="20dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/ngay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="20dp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Từ"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/orange">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/0/0">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đến"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/orange">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/0/0">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/Tinh_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tính"
+                android:textSize="20sp"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

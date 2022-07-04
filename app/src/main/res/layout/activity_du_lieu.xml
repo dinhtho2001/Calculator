@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="HardcodedText"
+    tools:context=".Controller.Option.NhietDoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Chuyển đổi dữ liệu">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="left"
+                tools:ignore="NestedWeights,RtlHardcoded,UseCompoundDrawables">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/chonDuLieu1"
+                    android:layout_marginLeft="5sp"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MB">
+                </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down_24">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/kqDuLieu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="30sp"
+                    android:text="1"
+                    android:background="@null">
+                </EditText>
+                <TextView
+                    android:id="@+id/title_kqDuLieu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Megabyte"
+                    android:textColor="@color/almostBlack">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/chonDuLieu2"
+                    android:layout_marginLeft="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="KB">
+                </TextView>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down_24">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/kqDuLieu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="1.024"
+                    android:background="@null">
+                </EditText>
+                <TextView
+                    android:id="@+id/title_kqDuLieu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/almostBlack"
+                    android:text="Kilobyte">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/seven"
+            android:text="7"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/eight"
+            android:text="8"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/nine"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/format_DuLieuActivity"
+            style="@style/buttonOperator"
+            android:text="AC" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:id="@+id/four"
+            style="@style/buttonNumber"
+
+            android:text="4" />
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/five"
+            android:text="5"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/six"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/backSpace"
+            style="@style/buttonOperator"
+            android:text="⌫" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/one"
+            android:text="1"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/two"
+            android:text="2"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/three"
+            android:text="3" />
+
+        <Button
+            style="@style/buttonOperator"
+            android:contentDescription="null"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:contentDescription="null"
+            />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/buttonNumber"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonNumber"
+            android:text="." />
+
+        <Button
+            style="@style/buttonNumber"
+            android:contentDescription="null"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

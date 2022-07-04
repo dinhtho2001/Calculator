@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="HardcodedText"
+    tools:context=".Controller.Option.NhietDoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Chuyển đổi đơn vị nhiệt độ">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Từ">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down_24">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:text="0">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Độ C"
+                    android:textColor="@color/almostBlack">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Từ">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down_24">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="32">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/almostBlack"
+                    android:text="Độ F">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/seven"
+            android:text="7"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/eight"
+            android:text="8"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/nine"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/multiplication"
+            style="@style/buttonOperator"
+            android:text="AC" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:id="@+id/four"
+            style="@style/buttonNumber"
+
+            android:text="4" />
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/five"
+            android:text="5"/>
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/six"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/subtraction"
+            style="@style/buttonOperator"
+            android:text="⌫" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/one"
+            android:text="1"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/two"
+            android:text="2"/>
+
+        <Button
+            style="@style/buttonNumber"
+            android:id="@+id/three"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/addition"
+            style="@style/buttonOperator"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:contentDescription="null"
+            />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/buttonNumber"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonNumber"
+            android:text="." />
+
+        <Button
+            style="@style/buttonNumber"
+            android:contentDescription="null"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
